@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Bungee+Shade&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Fredoka:wght@300..700&family=Gabarito:wght@400..900&family=Modak&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: 'PilcrowRounded-Heavy';
+  src: url('fonts/PilcrowRounded-Heavy.woff2') format('woff2'),
+       url('fonts/PilcrowRounded-Heavy.woff') format('woff'),
+       url('fonts/PilcrowRounded-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* Meeste px converted naar em: https://www.w3schools.com/tags/ref_pxtoemconversion.asp */
+
+/* Alle flexbox styling bron:https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+body {
+  margin: 0;
+  font-family: "Archivo", serif;
+  color: #FFFFFF;
+  background-color: #121212;
+}
+
+
+/* tekst styles */
+
+h1 {
+  font-family: 'PilcrowRounded-Heavy', sans-serif;
+  color: #FFFFFF;
+  font-size: 4.375em;
+  text-shadow: 0 0 14px#000000;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+.bloktitel {
+  margin-left: 2.5em;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+
+button {
+  /* Bron de button liet niet uitzichzelf het handje zien: https://www.shecodes.io/athena/141411-how-to-change-the-mouse-cursor-to-a-pointer-on-hover-using-css#:~:text=You%20can%20use%20the%20CSS,want%20the%20behavior%20applied%20to.&text=In%20this%20example%2C%20replace%20.,change%20the%20mouse%20cursor%20for. */
+  cursor: pointer;
+  border-radius: 0.375em;
+  text-decoration: none;
+  border: none;
+  background-color: #591B00;
+  color: #FFFFFF;
+  width: 12.5em;
+  height: 3.125em;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+button:hover{
+  background-color: #330F00;
+}
+
+
+iframe {
+  display: block;
+  margin: auto;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+  border: 0;
+}
+
+
+/* navigatie styles */
+
+nav {
+  height: 4.625em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #bf4613;
+  justify-content: space-between;
+}
+
+nav img {
+  margin-left: 1.875em;
+  width: 4.6875em;
+}
+
+nav ul {
+  display: flex;
+  margin-right: 1.875em;
+}
+
+nav li {
+  /* Bron voor het weghalen van de puntjes voor de li :https://forum.freecodecamp.org/t/cant-remove-text-decoration-from-li-tag/473543 */
+  list-style: none;
+  padding: 0.9375em 1.875em;
+}
+
+nav li:hover {
+  background-color: #992D00;
+  border-radius: 0.375em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-family: "archivo", sans-serif;
+  align-self: flex-end;
+  font-size: 18px;
+  height: 1.25em
+
+  ;
+}
+
+
+/* footer styles */
+
+footer {
+  display: flex;
+  align-items: center;
+  gap: 2.5em;
+  padding: 0.625em;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+}
+
+footer img {
+  width: 9.375em;
+  height: fit-content;
+}
+
+
+/* social media footer styles */
+
+#socialmedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6.25em;
+  background-color: #191818;
+  gap: 2.5em;
+}
+
+#socialmedia img {
+  height: 3.125em;
+}
+
+
+/* home pagina */
+
+#homefototekst {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  justify-content: center;
+  align-items: center;
+  /* Bron voor de background image: https://www.w3schools.com/cssref/pr_background-image.php */
+  background-image: url("images/homepagefoto-zwart.jpg");
+  height: calc(100vh - 74px);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+#homefototekst div {
+  width: 60%;
+}
+
+#homefototekst img {
+  width: 9.375em;
+}
+
+#logotekst {
+  text-align: center;
+  display: flex;
+  gap: 25%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#ytvideo {
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+  background-color: #1A1818;
+}
+
+#verkooppunten {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  text-align: center;
+  padding: 7.25em 0;
+}
+
+.kaarten {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #BF4613;
+  height: 25em;
+  border: 6px solid #E57545;
+  border-radius: 0.75em;
+  text-align: center;
+  padding: 20px 35px 20px 35px;
+  max-width: 13.625em;
+}
+
+
+/*Bron voor last-of-type: https://www.w3schools.com/cssref/sel_last-of-type.php*/
+.kaarten:last-of-type {
+  background-color: #1A1A1A;
+  text-align: center;
+  box-shadow: inset 0 0 10px 0 #E57545;
+  /* Shadows bron:https://designshack.net/articles/css/inner-shadows-in-css-images-text-and-beyond/ */
+}
+
+#verhaalverstuur {
+  /* Bron display grid en horizontaal en verticale center: https://www.youtube.com/watch?v=epwoVzdCq_M */
+  display: grid;
+  place-items: center;
+  padding: 6.25em 0;
+}
+
+#verhaalverstuur div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #BF4613;
+  width: 37.5em;
+  border-radius: 1.5em;
+  border: 5px solid #E57545;
+  padding: 2.5em;
+  gap: 1.875em;
+}
+
+#verhaalverstuur textarea {
+  width: 18.75em;
+  height: 6.25em;
+  border-radius: 0.75em;
+  padding: 2%;
+}
+
+
+/* styles voor aflevering items */
+
+#recenteafl {
+  background-color: #1A1818;
+  padding: 2.5em;
+}
+
+#alleafl {
+  background-color: #121212;
+  padding: 2.5em;
+}
+
+.afl {
+  display: flex;
+  border-radius: 1.25em;
+  padding: 2.5em;
+  margin: 2.5em;
+  gap: 0.75em;
+  align-items: center;
+}
+
+.afl img {
+  width: 9.375em;
+}
+
+/*Bron voor nth-of-type: https://www.freecodecamp.org/news/nth-child-vs-nth-of-type-selector-in-css/#:~:text=nth%2Dof%2Dtype()%20selects,%3E%20%2C%20and%20.*/
+.afl:nth-of-type(1) { background-color: #E37342; }
+.afl:nth-of-type(2) { background-color: #CF5A29; }
+.afl:nth-of-type(3) { background-color: #C04815; }
+.afl:nth-of-type(4) { background-color: #99350C; }
+.afl:nth-of-type(5) { background-color: #792706; }
+.afl:nth-of-type(6) { background-color: #591A00; }
+
+.afl div {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+}
+
+.playbuttontekst {
+  /* Bron margin left auto voegt zo veel mogelijk margin toe in een flexbox: https://stackoverflow.com/questions/32551291/ */
+  margin-left: auto;
+}
+
+.playbuttontekst div {
+  display: flex;
+  flex-direction: row;
+  gap: 0.625em;
+}
+
+.playbuttontekst img {
+  width: 3.125em;
+}
+
+
+/* over ons pagina */
+
+#overonsfoto {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background-image: url("images/homepagefoto-zwart.jpg");
+  /* volle scherm hoogte - nav hoogte */
+  height: calc(100vh - 74px);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+#overonsfoto p {
+  max-width: 60%;
+  line-height: 4em;
+  font-size: 19px;
+}
+
+.wie-verhaal {
+  padding: 2.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.wie-verhaal p {
+  max-width: 37.5em;
+}
+
+.waarom-verwachten {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5em;
+  text-align: right;
+  background-color: #191818;
+}
+
+.waarom-verwachten p {
+  max-width: 37.5em;
+  align-self: flex-end;
+}
+
+.overprofiel {
+  padding: 2.5em;
+  background-color: #E57545;
+}
+
+/*Bron omstebeurt kinderen stijlen https://stackoverflow.com/questions/5080699/how-can-i-style-even-and-odd-elements*/
+.overprofiel:nth-child(even) {
+  background-color: #BF4613;
+  text-align: right;
+}
+
+.overprofiel div {
+  display: flex;
+  gap: 25em;
+}
+
+.overprofiel img {
+  width: 21.875em;
+}
